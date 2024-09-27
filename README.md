@@ -20,4 +20,4 @@ This project uses PlatformIO as build tool.
 - [EditorConfig](https://plugins.jetbrains.com/plugin/7294-editorconfig)
 
 ## Building and running
-Connect the Arduino Uno to a USB-port. Then, use the buttons in your editor or run `pio run -t upload -t monitor -e uno` to upload, execute, and monitor the program over serial.
+Connect the Arduino Uno to a USB-port. Then, use the buttons in your editor or run `make run` (or `make.bat run` on Windows) to upload, execute, and monitor the program over serial.
