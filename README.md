@@ -4,6 +4,8 @@ Erik Junsved, Hanna Lindmark, Jonna Bauer, Tove Frænell
 
 A temperature controlled fan with PWM.
 
+You will also need the Arduino toolchain. This can be installed by installing [Arduino IDE](https://www.arduino.cc/en/software).
+
 ## Dev setup
 
 This project uses PlatformIO as build tool.

@@ -1,15 +1,19 @@
 #include <Arduino.h>
 
-void setup() {
-	pinMode(LED_BUILTIN, OUTPUT);
-	Serial.begin(115200);
-	Serial.println("setup()");
-}
+int main() {
+	init();
 
-void loop() {
-	Serial.println("loop()");
-	digitalWrite(LED_BUILTIN, HIGH);
-	delay( 64);
-	digitalWrite(LED_BUILTIN, LOW);
-	delay(128);
+	Serial.begin(115200);
+	Serial.print("Initializing...");
+	pinMode(LED_BUILTIN, OUTPUT);
+	Serial.println(" Done");
+
+	// Main program loop
+	// ReSharper disable once CppDFAEndlessLoop
+	for (;;) {
+		digitalWrite(LED_BUILTIN, LOW);
+		delay(128);
+		digitalWrite(LED_BUILTIN, HIGH);
+		delay(64);
+	}
 }
