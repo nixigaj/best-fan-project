@@ -12,11 +12,11 @@ echo Usage: .\make.bat [upload^|run^|clean]
 goto :eof
 
 :upload
-	pio run -t upload -e uno
+	platformio run -t upload -e uno
 	goto :eof
 
 :run
-	pio run -t upload -t monitor -e uno
+	platformio run -t upload -t monitor -e uno
 	goto :eof
 
 :clean
